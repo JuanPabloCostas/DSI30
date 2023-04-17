@@ -6,8 +6,8 @@ $apellidoMaterno=$_GET['apellidoMaterno'];
 $tecnicoVerficador=$_GET['tecnicoVerificador'];
 
 
-print("Id de Oficial ".$idOficial.<br>);
-print("Nombre ".$nombre.<br>);
-print("Apelliod Paterno ".$apellidoPaterno.<br>);
-print("Apellido Materno ".$apellidoMaterno.<br>);
-print("Tecnico Verificador ".$tecnicoVerficador.<br>);
+print("Id de Oficial ".$idOficial."<br>");
+print("Nombre ".$nombre."<br>");
+print("Apelliod Paterno ".$apellidoPaterno."<br>");
+print("Apellido Materno ".$apellidoMaterno."<br>");
+print("Tecnico Verificador ".$tecnicoVerficador."<br>");

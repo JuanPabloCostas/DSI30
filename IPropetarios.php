@@ -9,14 +9,14 @@
     $municipio=$_REQUEST['idPropetario'];
 
 
-    print("ID de Propetario ".$idPropetario.<br>);
-    print("RFC ".$rfc.<br>);
-    print("Nombre ".$nombre.<br>);
-    print("Apellido Paterno".$apellidoPaterno.<br>);
-    print("Apeliido Materno ".$apellidoPaterno.<br>);
-    print("Entidad Federativa ".$entidadFederativa.<br>);
-    print("Localidad ".$localidad.<br>);
-    print("Municicpio ".$municipio.<br>);
+    print("ID de Propetario ".$idPropetario."<br>");
+    print("RFC ".$rfc."<br>");
+    print("Nombre ".$nombre."<br>");
+    print("Apellido Paterno".$apellidoPaterno."<br>");
+    print("Apeliido Materno ".$apellidoPaterno."<br>");
+    print("Entidad Federativa ".$entidadFederativa."<br>");
+    print("Localidad ".$localidad."<br>");
+    print("Municicpio ".$municipio."<br>");
 
 
 

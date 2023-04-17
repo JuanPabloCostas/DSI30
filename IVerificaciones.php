@@ -14,18 +14,18 @@
 
 
     
-    print("Id de Verifiacion ".$idVerificacion.<br>);
-    print("Folio ".$folio.<br>);
-    print("Tipo de Servicio ".$tipoServicio.<br>);
-    print("Clase ".$clase.<br>);
-    print("Fecha de Expedicion ".$fechaExpedicion.<br>);
-    print("Folio de Certificado ".$folioCertificado.<br>);
-    print("Semestre ".$semestre.<br>);
-    print("Motivo Verificacion ".$moticoVerificacioni.<br>);
-    print("Hora de Entrada ".$horaEntradaa.<br>);
-    print("Hora de Salida ".$horaSalida.<br>);
-    print("Id de Vehiculo ".$idVehiculo.<br>);
-    print("Id de Centro de Verificacion ".$idCentroVerificacion.<br>);
+    print("Id de Verifiacion ".$idVerificacion."<br>");
+    print("Folio ".$folio."<br>");
+    print("Tipo de Servicio ".$tipoServicio."<br>");
+    print("Clase ".$clase."<br>");
+    print("Fecha de Expedicion ".$fechaExpedicion."<br>");
+    print("Folio de Certificado ".$folioCertificado."<br>");
+    print("Semestre ".$semestre."<br>");
+    print("Motivo Verificacion ".$moticoVerificacioni."<br>");
+    print("Hora de Entrada ".$horaEntradaa."<br>");
+    print("Hora de Salida ".$horaSalida."<br>");
+    print("Id de Vehiculo ".$idVehiculo."<br>");
+    print("Id de Centro de Verificacion ".$idCentroVerificacion."<br>");
 
 
 ?>
