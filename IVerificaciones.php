@@ -21,11 +21,16 @@
     print("Fecha de Expedicion ".$fechaExpedicion."<br>");
     print("Folio de Certificado ".$folioCertificado."<br>");
     print("Semestre ".$semestre."<br>");
-    print("Motivo Verificacion ".$moticoVerificacioni."<br>");
-    print("Hora de Entrada ".$horaEntradaa."<br>");
+    print("Motivo Verificacion ".$moticoVerificacion."<br>");
+    print("Hora de Entrada ".$horaEntrada."<br>");
     print("Hora de Salida ".$horaSalida."<br>");
     print("Id de Vehiculo ".$idVehiculo."<br>");
     print("Id de Centro de Verificacion ".$idCentroVerificacion."<br>");
 
-
+    $SQL = "INSERT INTO Verificaciones VALUES ('$idVerificacion','$folio','$tipoServicio','$clase','$fechaExpedicion','$folioCertificado','$semestre','$moticoVerificacion','$horaEntrada','$horaSalida','$idVehiculo','$idCentroVerificacion')";
+    print($SQL);
+    include("Controlador.php");
+    $Con = Conectar();
+    $Resul=Ejecutar($Con,$SQL);
+    Desconectar($Con);
 ?>

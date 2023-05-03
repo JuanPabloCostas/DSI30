@@ -1,28 +1,28 @@
 <?php
-    $idVehiculo=$_GET['idVehiculo']
-    $placa=$_GET['placa']
-    $numeroSerie=$_GET['numeroSerie']
-    $fecha=$_GET['fecha']
-    $municipio=$_GET['municipio']
-    $origen=$_GET['origen']
-    $modelo=$_GET['modelo']
-    $marca=$_GET['marca']
-    $folio=$_GET['folio']
-    $transmision=$_GET['transmision']
-    $cilindraje=$_GET['cilindraje']
-    $capacidad=$_GET['capacidad']
-    $noPuerta=$_GET['noPuerta']
-    $noAsientos=$_GET['noAsientos']
-    $noMotor=$_GET['noMotor']
-    $clase=$_GET['clase']
-    $tipo=$_GET['tipo']
-    $uso=$_GET['uso']
-    $rfa=$_GET['rfa']
-    $color=$_GET['color']
-    $localidad=$_GET['localidad']
-    $cveVehicular=$_GET['cveVehicular']
-    $placaAnterior=$_GET['placaAnterior']
-    $tipoCombustible=$_GET['tipoCombustible']
+    $idVehiculo=$_GET['idVehiculo'];
+    $placa=$_GET['placa'];
+    $numeroSerie=$_GET['numeroSerie'];
+    $fecha=$_GET['fecha'];
+    $municipio=$_GET['municipio'];
+    $origen=$_GET['origen'];
+    $modelo=$_GET['modelo'];
+    $marca=$_GET['marca'];
+    $folio=$_GET['folio'];
+    $transmision=$_GET['transmision'];
+    $cilindraje=$_GET['cilindraje'];
+    $capacidad=$_GET['capacidad'];
+    $noPuerta=$_GET['noPuerta'];
+    $noAsientos=$_GET['noAsientos'];
+    $noMotor=$_GET['noMotor'];
+    $clase=$_GET['clase'];
+    $tipo=$_GET['tipo'];
+    $uso=$_GET['uso'];
+    $rfa=$_GET['rfa'];
+    $color=$_GET['color'];
+    $localidad=$_GET['localidad'];
+    $cveVehicular=$_GET['cveVehicular'];
+    $placaAnterior=$_GET['placaAnterior'];
+    $tipoCombustible=$_GET['tipoCombustible'];
     
 
     
@@ -51,5 +51,11 @@
     print("Clave Vehicular ".$cveVehicular."<br>");
     print("Placa Anterior ".$placaAnterior."<br>");
     print("Tipo de Combustible ".$tipoCombustible."<br>");
-    
+
+    $SQL = "INSERT INTO Vehiculos VALUES ('$idVehiculo','$placa','$numeroSerie','$fecha','$municipio','$origen','$modelo','$marca','$folio','$transmision','$cilindraje','$capacidad','$noPuerta','$noAsientos','$noMotor','$clase','$tipo','$uso','$rfa','$color','$localidad','$cveVehicular','$placaAnterior','$tipoCombustible')";
+    print($SQL);
+    include("Controlador.php");
+    $Con = Conectar();
+    $Resul=Ejecutar($Con,$SQL);
+    Desconectar($Con);
 ?>

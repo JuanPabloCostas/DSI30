@@ -23,4 +23,13 @@
     print("Id de Vehiculo ".$idVehiculo."<br>");
     print("Id de Propetario ".$idPropetario."<br>");
 
+
+    $SQL = "INSERT INTO TarjetasCirculaciones VALUES ('$idTjaCirculacion','$usoServicio',
+    '$vigencia','$operacion','$constanciaInscripcion','$clase'
+    ,'$movimiento','$fechaExpedicion','$idVehiculo','$idPropetario')";
+    print($SQL);
+    include("Controlador.php");
+    $Con = Conectar();
+    $Resul=Ejecutar($Con,$SQL);
+    Desconectar($Con);
 ?>

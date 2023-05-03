@@ -19,11 +19,12 @@
     print("Municicpio ".$municipio."<br>");
 
 
-
-
-
-
-
-
-
+    $SQL = "INSERT INTO Propetarios VALUES ('$idOficial','$nombre',
+    '$apellidoPaterno','$apellidoMaterno','$entidadFederativa','$localidad'
+    ,'$municipio')";
+    print($SQL);
+    include("Controlador.php");
+    $Con = Conectar();
+    $Resul=Ejecutar($Con,$SQL);
+    Desconectar($Con);
 ?>

@@ -22,4 +22,13 @@ print("Id de Oficial ".$idCentroVerificacion."<br>");
 print("Id de Tarjeta de Ciruclacion ".$idCentroVerificacion."<br>");
 print("Id de Vehiculo".$idCentroVerificacion."<br>");
 
+$SQL = "INSERT INTO Infracciones VALUES ('$idInfraccion','$noFolio',
+'$fechaHora','$ubicacionInfraccion','$motivacion','$operativo'
+,'$idLicencia','$idOficial','$idTjaCirculacion','$idVehiculo')";
+print($SQL);
+include("Controlador.php");
+$Con = Conectar();
+$Resul=Ejecutar($Con,$SQL);
+Desconectar($Con);
+
 ?>
