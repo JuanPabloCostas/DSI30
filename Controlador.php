@@ -22,3 +22,35 @@ function Desconectar($Con){
     return $R; // Va a regresar un 1 o un 0 (error)
 }
 ?>
+
+
+
+<!-- Proceso de coneccion con BD -->
+<!-- 1. Conectar al SMBD
+2. Seleccionarla base de datos
+3. Ejecutar la consulta
+4. Procesar los resultados
+5. Cerrar la conexion -->
+
+
+
+<!-- 
+    Nombre: mysqli_num_rows
+    Descripcion: Cuenta las filas resultantes de una consulta
+    Parametro de entrada: Result
+    Parametro de salida: Numero: Cantidad de elementos afectados
+ -->
+
+ <!-- 
+    Ejemplo:
+
+    include(Conexion.php);
+    $SQL = "Select * from licencias "
+    $Con = Conectar();
+    $Result = Ejecutar($Con, $SQL);
+    /////////////////
+    $Numero = mysqli_num_rows($Result);
+    print($Numero);
+    /////////////////
+    Desconectar();
+  -->
