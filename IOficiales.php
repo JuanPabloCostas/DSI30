@@ -19,4 +19,10 @@ print($SQL);
 include("Controlador.php");
 $Con = Conectar();
 $Resul=Ejecutar($Con,$SQL);
+$FilasAfectadas = mysqli_affected_rows($Con);
+if ($FilasAfectadas == 1) {
+    print("1 Registro Insertado")
+}else{
+    print("Registro no insertado")
+}
 Desconectar($Con);
