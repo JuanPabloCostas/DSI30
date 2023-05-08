@@ -54,3 +54,12 @@ function Desconectar($Con){
     /////////////////
     Desconectar();
   -->
+
+
+  <!-- 
+    Funciones utiles:
+    mysqli_affected_rows
+    mysqli_num_rows
+    mysqli_fetch_row
+    mysqli_error
+-->
