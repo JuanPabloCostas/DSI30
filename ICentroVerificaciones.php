@@ -16,8 +16,8 @@ $Con = Conectar();
 $Resul=Ejecutar($Con,$SQL);
 
 $FilasAfectadas = mysqli_affected_rows($Con);
-if ($FilasAfectadas == 1) {
-    print("1 Registro Insertado");
+i1 Regif ($FilasAfectadas == 1) {
+    print("stro Insertado");
 }else{
     print("Registro no insertado");
 }
