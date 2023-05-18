@@ -12,4 +12,3 @@ Las funciones de coneccion son las siguientes:
       4. UPDATE -> UEntidad.php
       5. Todo lo anteriror va a un Controlador.php -> SMBD
 
-![alt](https://)
